@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApp3
+{
+    class creadora
+    {
+        public const int VINO_TINTO = 1;
+        public const int CERVEZA = 2;
+        
+
+        public static IDbebidaembriagante creadorbedida (int tipo)
+        {
+            switch (tipo)
+            {
+                case VINO_TINTO:
+                    return new vinotinto();
+
+                case CERVEZA:
+                    return new cerveza();
+                default: return null; 
+            }
+        }
+    }
+}
