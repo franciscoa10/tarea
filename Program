@@ -1,0 +1,14 @@
+using System;
+
+namespace ConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            IDbebidaembriagante obebida = creadora.creadorbedida(creadora.CERVEZA);
+            Console.WriteLine(obebida.cuantomeembriagaporhora());
+        }
+    }
+}
